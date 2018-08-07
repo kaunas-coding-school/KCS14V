@@ -1,0 +1,32 @@
+.mainLayout {
+	border: 1px dashed green;	
+    display: grid;
+    grid-template-columns: 1.2fr 5fr;
+    grid-template-rows: auto 30px;
+    grid-gap: 10px;
+}
+.mainLayout>div {
+	border: 1px dashed red;	
+}
+.rightSide {
+	border: 1px dashed black;
+    display: grid;
+    grid-template-rows: 50px auto;
+}
+.rightSide>* {
+	border: 1px dashed blue;	
+}
+.rightSide header {
+	display: grid;
+	grid-template-columns: auto 50px;
+	align-items: center;
+}
+.rightSide header .burger{
+	display: flex;
+	justify-content: center;
+}
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

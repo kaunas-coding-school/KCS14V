@@ -1,0 +1,12 @@
+.portfolio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.portfolio div.item {
+	border: 1px dashed darkgray;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

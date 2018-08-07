@@ -1,0 +1,19 @@
+.sidebar {
+    color: white;
+    background-color: rgb(60, 60, 60);
+    box-shadow: 0 0 10px #3C3C3C;
+}
+.sidegrid {
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+    grid-gap: 10px;
+}
+
+.fixedSide {
+    position: fixed;
+}
+
+.meniu a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
