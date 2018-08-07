@@ -3,33 +3,147 @@
 <head>
     <title>Pirmasis psl</title>
     <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+          integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/sachmatai.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/portfolio.css">
 </head>
-<body>
+<body class="mainLayout">
 
 
 <div class="sidebar">
-    <img src="logo.png" alt="Logo"/>
-    <div class="meniu">
-        <ul>
-            <li class="elem"><a href="/">Apie mane</a></li>
-            <li class="elem"><a href="portfolio.html">Portfolio</a></li>
-            <li class="elem"><a href="kontaktai.html">Kontaktai</a></li>
-        </ul>
+    <div class="fixedSide">
+        <div class="sidegrid">
+            <div class="center">
+                <img src="img/logo.png" alt="Logo"/>
+            </div>
+            <div class="meniu">
+                <ul>
+                    <li class="elem"><a href="/">Apie mane</a></li>
+                    <li class="elem"><a href="portfolio.html">Portfolio</a></li>
+                    <li class="elem"><a href="kontaktai.html">Kontaktai</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
 </div>
 <div class="rightSide">
     <header>
         <div class="title">Portfolio</div>
-        <div class="burger btn">=</div>
+        <div class="burger btn">
+            <i class="fas fa-ellipsis-v"></i>
+        </div>
     </header>
-    <article>
-        PORTFOLIO
+    <article class="portfolio">
+        <div class="item">
+            <div class="sachmatai">
+                <div class="eilute">
+                    <span class="juoda cell">.</span>
+                    <span class="balta cell">.</span>
+                    <span class="juoda cell">.</span>
+                    <span class="balta cell">.</span>
+                </div>
+                <div class="eilute">
+                    <span class="balta cell">.</span>
+                    <span class="juoda cell">.</span>
+                    <span class="balta cell">.</span>
+                    <span class="juoda cell">.</span>
+                </div>
+                <div class="eilute">
+                    <span class="juoda cell">.</span>
+                    <span class="balta cell">.</span>
+                    <span class="juoda cell">.</span>
+                    <span class="balta cell">.</span>
+                </div>
+                <div class="eilute">
+                    <span class="balta cell">.</span>
+                    <span class="juoda cell">.</span>
+                    <span class="balta cell">.</span>
+                    <span class="juoda cell">.</span>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="smile">
+                <div class="eilute">
+                    <span class="balta cell">.</span>
+                    <span class="balta cell">.</span>
+                    <span class="balta cell">.</span>
+                    <span class="balta cell">.</span>
+                    <span class="balta cell">.</span>
+                    <span class="balta cell">.</span>
+                    <span class="balta cell">.</span>
+                </div>
+                <div class="eilute">
+                    <span class="balta cell">.</span>
+                    <span class="juoda cell">.</span>
+                    <span class="balta cell">.</span>
+                    <span class="balta cell">.</span>
+                    <span class="balta cell">.</span>
+                    <span class="juoda cell">.</span>
+                    <span class="balta cell">.</span>
+                </div>
+                <div class="eilute">
+                    <span class="balta cell">.</span>
+                    <span class="balta cell">.</span>
+                    <span class="balta cell">.</span>
+                    <span class="balta cell">.</span>
+                    <span class="balta cell">.</span>
+                    <span class="balta cell">.</span>
+                    <span class="balta cell">.</span>
+                </div>
+                <div class="eilute">
+                    <span class="balta cell">.</span>
+                    <span class="juoda cell">.</span>
+                    <span class="balta cell">.</span>
+                    <span class="balta cell">.</span>
+                    <span class="balta cell">.</span>
+                    <span class="juoda cell">.</span>
+                    <span class="balta cell">.</span>
+                </div>
+                <div class="eilute">
+                    <span class="balta cell">.</span>
+                    <span class="balta cell">.</span>
+                    <span class="juoda cell">.</span>
+                    <span class="juoda cell">.</span>
+                    <span class="juoda cell">.</span>
+                    <span class="balta cell">.</span>
+                    <span class="balta cell">.</span>
+                </div>
+                <div class="eilute">
+                    <span class="balta cell">.</span>
+                    <span class="balta cell">.</span>
+                    <span class="balta cell">.</span>
+                    <span class="balta cell">.</span>
+                    <span class="balta cell">.</span>
+                    <span class="balta cell">.</span>
+                    <span class="balta cell">.</span>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="tavoAmzius">
+                <input type="text" id="vardas" placeholder="Tavo Vardas?"/><br/>
+                <input type="text" id="amzius" placeholder="Kiek tau metu?"/><br/>
+                <input type="button" value="Kada gimiau?" onclick="Skaiciuoti()"/><br/>
+                <p>
+                    <span id="rez"></span>
+                </p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="/img/light_off.jpg" alt="Off" onclick="toggleLempute()" id="lempute"/>
+        </div>
     </article>
 </div>
 <footer>
     &copy; Visos teises saugomos 2018
 </footer>
 
-
+<script src="/js/skaiciuokle.js"></script>
+<script src="/js/lempute.js"></script>
 </body>
 </html>
