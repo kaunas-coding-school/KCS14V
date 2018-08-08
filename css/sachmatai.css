@@ -2,11 +2,14 @@
     background-color: black;
 }
 
-.balta {
-    background-color: white;
+.smile, .sachmatai {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 .cell {
     width: 30px;
     height: 30px;
+    border: 1px dotted lightgray;
 }
